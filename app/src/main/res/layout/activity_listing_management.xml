@@ -4,28 +4,33 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvWelcome"
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title" />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price" />
+
+    <Button
+        android:id="@+id/btnUploadImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome, User"
-        android:textSize="18sp" />
+        android:text="Upload Image" />
 
     <Button
-        android:id="@+id/btnBrowse"
+        android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Browse Listings" />
-
-    <Button
-        android:id="@+id/btnCreateListing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Create a Listing" />
-
-    <Button
-        android:id="@+id/btnProfile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Manage Profile" />
+        android:text="Submit Listing" />
 </LinearLayout>
