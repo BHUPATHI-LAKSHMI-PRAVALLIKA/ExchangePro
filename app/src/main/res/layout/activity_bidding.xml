@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search for Items" />
+
+    <ListView
+        android:id="@+id/results_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="316dp" />
+
+    <TextView
+        android:id="@+id/current_bid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Bid: " />
+
+    <Button
+        android:id="@+id/place_bid_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Bid" />
+</LinearLayout>
